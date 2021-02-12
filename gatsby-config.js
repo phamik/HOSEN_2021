@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Ho Sen Quan Restaurant`,
+    description: `Come and taste Vietnamese Cuisine`,
+    author: `Tien Pham`,
+    address: `Areál SAPARIA, Libušská 319, Praha 4`,
+    openingTimes: `Po - Pá: 9:00h - 22:00h, So - Ne: 9:00h - 22:00h`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -27,8 +29,9 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-styled-components`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
