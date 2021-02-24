@@ -1,37 +1,19 @@
-import React from 'react';
-import { useStaticQuery, graphql, Link } from 'gatsby';
-import Img from 'gatsby-image';
-import { HeaderContainer, LogoWrapper, LinksWrapper, StyledLink } from './Navbar.styles';
+// import React from 'react';
+// import { Burger } from './Burger';
+// import { DesktopMenu } from './DesktopMenu';
+// import { MobileMenu } from './MobileMenu';
+// import { useMediaQuery } from '../../hooks/useMediaQuery';
 
-function Navbar() {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "Logo/LOGO-HOSEN.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
+// function Navbar() {
+//   const isPageWide = useMediaQuery('(min-width: 1040px)')
 
-  return (
-    <HeaderContainer>
-      <LogoWrapper>
-        <Link to="/" >
-          <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-        </Link>
-      </LogoWrapper>
-      <LinksWrapper>
-        <StyledLink to="/">Aktuality</StyledLink>
-        <StyledLink to="/">Menu</StyledLink>
-        <StyledLink to="/">Galerie</StyledLink>
-        <StyledLink to="/">Kontakty</StyledLink>
-        <StyledLink to="/">Catering</StyledLink>
-      </LinksWrapper>
-    </HeaderContainer>
-  )
-}
+//   return (
+//     <>
+//       {isPageWide && 
+//         <DesktopMenu/>
+//       }
+//     </>
+//   );
+// }
 
-export default Navbar;
+// export default Navbar;

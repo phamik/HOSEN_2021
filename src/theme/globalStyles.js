@@ -12,6 +12,7 @@ export const theme = {
     small: '0.875rem',
     medium: '1.5rem',
     // large: ''
+    massive: '4.625rem'
   },
   fontWeight: {
     normal: '400',
