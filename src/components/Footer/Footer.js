@@ -1,6 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import { useMediaQuery } from '../../hooks/useMediaQuery';
 
 import { 
   FooterContainer,
@@ -27,20 +28,33 @@ function Footer() {
       }
     }
   `);
+
+  const showText = useMediaQuery('(min-width: 768px)');
   
   return (
     <FooterContainer>
-      <OpeningTimesContainer>
-        <span>OTEVÍRACÍ HODINY:</span>
-        {data.site.siteMetadata.openingTimes}
-      </OpeningTimesContainer>
+      
+      {showText && 
+        <OpeningTimesContainer>
+          <span>OTEVÍRACÍ HODINY:</span>
+          {data.site.siteMetadata.openingTimes}
+        </OpeningTimesContainer>
+      }
+      
       <LogoContainer>
         <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+        <br/>
+        © {new Date().getFullYear()}
       </LogoContainer>
-      <AddressContainer>
-        <span>ADRESA:</span>
-        {data.site.siteMetadata.address}
-      </AddressContainer>
+
+      {showText && 
+        <AddressContainer>
+          <span>ADRESA:</span>
+          {data.site.siteMetadata.address}
+        </AddressContainer>
+      }
+      
+      
     </FooterContainer>
   )
 }

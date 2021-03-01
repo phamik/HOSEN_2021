@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { bool } from 'prop-types';
+import { Link } from 'gatsby';
 import { StyledMenu } from './MobileMenu.styles';
 
 const MobileMenu = ({ open, ...props }) => {
@@ -9,20 +10,17 @@ const MobileMenu = ({ open, ...props }) => {
   const tabIndex = isHidden ? 0 : -1;
 
   return (
-    <StyledMenu open={open} aria-hidden={!isHidden} {...props}>
-      <a href="/" tabIndex={tabIndex}>
-        <span aria-hidden="true">💁🏻‍♂️</span>
-        About us
-      </a>
-      <a href="/" tabIndex={tabIndex}>
-        <span aria-hidden="true">💸</span>
-        Pricing
-        </a>
-      <a href="/" tabIndex={tabIndex}>
-        <span aria-hidden="true">📩</span>
-        Contact
-        </a>
-    </StyledMenu>
+    <>
+
+      <StyledMenu open={open} aria-hidden={!isHidden} {...props}>
+        <Link to="/">Aktuality</Link>
+        <Link to="/">Menu</Link>
+        <Link to="/">Galerie</Link>
+        <Link to="/">Kontakty</Link>
+        <Link to="/">Catering</Link>
+      </StyledMenu>
+
+    </>
   )
 }
 
