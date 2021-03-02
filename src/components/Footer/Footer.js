@@ -44,7 +44,7 @@ function Footer() {
       <LogoContainer>
         <Img fluid={data.placeholderImage.childImageSharp.fluid} />
         <br/>
-        © {new Date().getFullYear()}
+        ©{new Date().getFullYear()}
       </LogoContainer>
 
       {showText && 

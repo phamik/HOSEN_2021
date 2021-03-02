@@ -1,8 +1,8 @@
 {
-  "name": "Hosen Restaurant website",
+  "name": "hosen-restaurant-website",
   "private": true,
-  "description": "",
-  "version": "1.0",
+  "description": "Ho Sen Quan website",
+  "version": "1.0.0",
   "author": "Tien Pham  <tmpham95@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.12.0",
@@ -43,7 +43,7 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }, 
+  },
   "prettier": {
     "trailingComma": "es5",
     "tabWidth": 2,
