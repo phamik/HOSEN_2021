@@ -18,7 +18,6 @@ The goal is to update the current design at: hosenquan.cz
 
 ### Built With
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Gatsby.js](https://www.gatsbyjs.com/)
 * [React.js](https://reactjs.org/)
 * [styled-components](https://styled-components.com/)
