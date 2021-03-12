@@ -14,7 +14,7 @@ export const FooterContainer = styled.div`
 	@media (max-width: ${props => props.theme.media.small}) {
     flex-direction: column;
   }
-
+	
 	& div ::before {
   	content: "";
 	}
@@ -32,6 +32,7 @@ export const OpeningTimesContainer = styled.div`
 export const LogoContainer = styled.div`
 	margin: 1rem;
   width: 20%;
+	max-width: 190px;
   top: 0;
   left: 0;
 	text-align: center;
